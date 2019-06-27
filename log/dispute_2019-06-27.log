@@ -1,0 +1,427 @@
+2019-06-27 11:18:57 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: disputespider)
+2019-06-27 11:18:57 [scrapy.utils.log] INFO: Versions: lxml 4.3.3.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.6.8 (default, Jan 14 2019, 11:02:34) - [GCC 8.0.1 20180414 (experimental) [trunk revision 259383]], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.7, Platform Linux-4.15.0-53-generic-x86_64-with-Ubuntu-18.04-bionic
+2019-06-27 11:18:57 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'disputespider', 'CONCURRENT_REQUESTS': 8, 'DOWNLOAD_DELAY': 2, 'LOG_FILE': '/home/hepburn/disputespider/log/dispute_2019-06-27.log', 'NEWSPIDER_MODULE': 'disputespider.spiders', 'SPIDER_MODULES': ['disputespider.spiders']}
+2019-06-27 11:18:57 [scrapy.extensions.telnet] INFO: Telnet Password: 78ec4e94db69c70f
+2019-06-27 11:18:57 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2019-06-27 11:18:57 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'disputespider.middlewares.RandomUserAgentDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-06-27 11:18:57 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-06-27 11:18:57 [scrapy.middleware] INFO: Enabled item pipelines:
+['disputespider.pipelines.DisputespiderPipeline']
+2019-06-27 11:18:57 [scrapy.core.engine] INFO: Spider opened
+2019-06-27 11:18:57 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-06-27 11:18:57 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-06-27 11:18:57 [root] DEBUG: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24
+2019-06-27 11:18:59 [scrapy.core.engine] DEBUG: Crawled (401) <GET https://api.paypal.com/v1/customer/disputes> (referer: None)
+2019-06-27 11:18:59 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <401 https://api.paypal.com/v1/customer/disputes>: HTTP status code is not handled or not allowed
+2019-06-27 11:18:59 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-06-27 11:18:59 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 365,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 570,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/401': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 6, 27, 3, 18, 59, 298537),
+ 'httperror/response_ignored_count': 1,
+ 'httperror/response_ignored_status_count/401': 1,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'memusage/max': 58523648,
+ 'memusage/startup': 58523648,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2019, 6, 27, 3, 18, 57, 821931)}
+2019-06-27 11:18:59 [scrapy.core.engine] INFO: Spider closed (finished)
+2019-06-27 11:19:41 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: disputespider)
+2019-06-27 11:19:41 [scrapy.utils.log] INFO: Versions: lxml 4.3.3.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.6.8 (default, Jan 14 2019, 11:02:34) - [GCC 8.0.1 20180414 (experimental) [trunk revision 259383]], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.7, Platform Linux-4.15.0-53-generic-x86_64-with-Ubuntu-18.04-bionic
+2019-06-27 11:19:41 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'disputespider', 'CONCURRENT_REQUESTS': 8, 'DOWNLOAD_DELAY': 2, 'LOG_FILE': '/home/hepburn/disputespider/log/dispute_2019-06-27.log', 'NEWSPIDER_MODULE': 'disputespider.spiders', 'SPIDER_MODULES': ['disputespider.spiders']}
+2019-06-27 11:19:41 [scrapy.extensions.telnet] INFO: Telnet Password: d204c22ea8454a7a
+2019-06-27 11:19:41 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2019-06-27 11:19:41 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'disputespider.middlewares.RandomUserAgentDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-06-27 11:19:41 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-06-27 11:19:41 [scrapy.middleware] INFO: Enabled item pipelines:
+['disputespider.pipelines.DisputespiderPipeline']
+2019-06-27 11:19:41 [scrapy.core.engine] INFO: Spider opened
+2019-06-27 11:19:41 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-06-27 11:19:41 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-06-27 11:19:41 [root] DEBUG: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0
+2019-06-27 11:19:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.paypal.com/v1/customer/disputes> (referer: None)
+2019-06-27 11:19:43 [root] DEBUG: Baiduspider+(+http://www.baidu.com/search/spider.htm)
+2019-06-27 11:19:43 [root] DEBUG: Mozilla/5.0 (compatible;YoudaoFeedFetcher/1.0;http://www.youdao.com/help/reader/faq/topic006/;1 subscribers;)
+2019-06-27 11:19:43 [root] DEBUG: Sogou Push Spider/3.0(+http://www.sogou.com/docs/help/webmasters.htm#07)
+2019-06-27 11:19:43 [root] DEBUG: Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN) AppleWebKit/523.15 (KHTML, like Gecko, Safari/419.3) Arora/0.3 (Change: 287 c9dfb30)
+2019-06-27 11:19:43 [root] DEBUG: Opera/9.80 (Windows NT 6.1; U; en) Presto/2.8.131 Version/11.11
+2019-06-27 11:19:43 [root] DEBUG: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3
+2019-06-27 11:19:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.paypal.com/v1/customer/disputes/PP-D-26920986> (referer: https://api.paypal.com/v1/customer/disputes)
+2019-06-27 11:19:48 [root] DEBUG: offer不存在,将其设置为空---'offer'
+2019-06-27 11:19:48 [py.warnings] WARNING: /usr/local/lib/python3.6/dist-packages/pymysql/cursors.py:170: Warning: (1062, "Duplicate entry 'PP-D-26920986' for key 'uq_dispute_id'")
+  result = self._query(query)
+
+2019-06-27 11:19:48 [root] DEBUG: 插入数据库成功
+2019-06-27 11:19:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.paypal.com/v1/customer/disputes/PP-D-26920986>
+{'buyer': 'Aisuluu Zhunusbekova',
+ 'buyer_transaction_id': '1P323416RH0912449',
+ 'create_time': '2019-03-23T17:48:25.000Z',
+ 'currency_code': 'USD',
+ 'dispute_channel': 'EXTERNAL',
+ 'dispute_id': 'PP-D-26920986',
+ 'dispute_life_cycle_stage': 'PRE_ARBITRATION',
+ 'dispute_state': 'RESOLVED',
+ 'disputed_transactions': [{'buyer': {'name': 'Aisuluu Zhunusbekova'},
+                            'buyer_transaction_id': '1P323416RH0912449',
+                            'create_time': '2019-03-02T21:22:15.000Z',
+                            'custom': 'Shopify',
+                            'gross_amount': {'currency_code': 'USD',
+                                             'value': '69.99'},
+                            'invoice_number': 'c7977695019119.1',
+                            'items': [],
+                            'seller': {'email': 'paypal@fastshipstore.com',
+                                       'merchant_id': 'C78RTJUFNTLN6',
+                                       'name': 'Leite Network Technology Co., '
+                                               'Ltd.'},
+                            'seller_protection_eligible': True,
+                            'seller_transaction_id': '7W4976541T863154B',
+                            'transaction_status': 'COMPLETED'}],
+ 'evidences': [{'date': '2019-03-26T07:50:24.000Z',
+                'evidence_info': {'tracking_info': [{'carrier_name': 'HK_FOUR_PX_EXPRESS',
+                                                     'tracking_number': '302108118177'}]},
+                'evidence_type': 'PROOF_OF_FULFILLMENT',
+                'source': 'SUBMITTED_BY_SELLER'}],
+ 'extensions': {},
+ 'invoice_code': 'c7977695019119.1',
+ 'links': [{'href': 'https://api.paypal.com/v1/customer/disputes/PP-D-26920986',
+            'method': 'GET',
+            'rel': 'self'}],
+ 'messages': {'posted_by': 'BUYER', 'time_posted': '2019-03-23T17:48:35.000Z'},
+ 'offer': '',
+ 'reason': 'UNAUTHORISED',
+ 'seller': 'paypal@fastshipstore.com',
+ 'stamp': '1561605588',
+ 'status': 'RESOLVED',
+ 'total_price': '69.99',
+ 'update_time': '2019-05-04T13:14:37.000Z',
+ 'url': 'https://api.paypal.com/v1/customer/disputes/PP-D-26920986'}
+2019-06-27 11:19:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.paypal.com/v1/customer/disputes/PP-D-29183312> (referer: https://api.paypal.com/v1/customer/disputes)
+2019-06-27 11:19:50 [root] DEBUG: messages不存在,将其设置为空---'messages'
+2019-06-27 11:19:50 [root] DEBUG: extensions不存在,将其设置为空---'extensions'
+2019-06-27 11:19:50 [root] DEBUG: evidence不存在,将其设置为空---'evidences'
+2019-06-27 11:19:50 [root] DEBUG: offer不存在,将其设置为空---'offer'
+2019-06-27 11:19:50 [py.warnings] WARNING: /usr/local/lib/python3.6/dist-packages/pymysql/cursors.py:170: Warning: (1062, "Duplicate entry 'PP-D-29183312' for key 'uq_dispute_id'")
+  result = self._query(query)
+
+2019-06-27 11:19:51 [root] DEBUG: 插入数据库成功
+2019-06-27 11:19:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.paypal.com/v1/customer/disputes/PP-D-29183312>
+{'buyer': 'Renee Valant',
+ 'buyer_transaction_id': '4VE61016S5087002N',
+ 'create_time': '2019-04-22T14:06:56.000Z',
+ 'currency_code': 'USD',
+ 'dispute_channel': 'INTERNAL',
+ 'dispute_id': 'PP-D-29183312',
+ 'dispute_life_cycle_stage': 'CHARGEBACK',
+ 'dispute_state': 'RESOLVED',
+ 'disputed_transactions': [{'buyer': {'name': 'Renee Valant'},
+                            'buyer_transaction_id': '4VE61016S5087002N',
+                            'create_time': '2019-04-19T15:01:21.000Z',
+                            'custom': 'Shopify',
+                            'gross_amount': {'currency_code': 'USD',
+                                             'value': '29.99'},
+                            'invoice_number': 'c8238969782383.1',
+                            'items': [],
+                            'seller': {'email': 'paypal@fastshipstore.com',
+                                       'merchant_id': 'C78RTJUFNTLN6',
+                                       'name': 'Leite Network Technology Co., '
+                                               'Ltd.'},
+                            'seller_protection_eligible': True,
+                            'seller_transaction_id': '2GR95539V6184391A',
+                            'transaction_status': 'COMPLETED'}],
+ 'evidences': '',
+ 'extensions': '',
+ 'invoice_code': 'c8238969782383.1',
+ 'links': [{'href': 'https://api.paypal.com/v1/customer/disputes/PP-D-29183312',
+            'method': 'GET',
+            'rel': 'self'}],
+ 'messages': '',
+ 'offer': '',
+ 'reason': 'UNAUTHORISED',
+ 'seller': 'paypal@fastshipstore.com',
+ 'stamp': '1561605590',
+ 'status': 'RESOLVED',
+ 'total_price': '29.99',
+ 'update_time': '2019-04-22T14:43:21.000Z',
+ 'url': 'https://api.paypal.com/v1/customer/disputes/PP-D-29183312'}
+2019-06-27 11:19:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.paypal.com/v1/customer/disputes/PP-D-30925146> (referer: https://api.paypal.com/v1/customer/disputes)
+2019-06-27 11:19:53 [py.warnings] WARNING: /usr/local/lib/python3.6/dist-packages/pymysql/cursors.py:170: Warning: (1062, "Duplicate entry 'PP-D-30925146' for key 'uq_dispute_id'")
+  result = self._query(query)
+
+2019-06-27 11:19:53 [root] DEBUG: 插入数据库成功
+2019-06-27 11:19:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.paypal.com/v1/customer/disputes/PP-D-30925146>
+{'buyer': 'jennifer ryan',
+ 'buyer_transaction_id': '7P7793882H888144U',
+ 'create_time': '2019-05-14T16:41:04.000Z',
+ 'currency_code': 'USD',
+ 'dispute_channel': 'INTERNAL',
+ 'dispute_id': 'PP-D-30925146',
+ 'dispute_life_cycle_stage': 'CHARGEBACK',
+ 'dispute_state': 'RESOLVED',
+ 'disputed_transactions': [{'buyer': {'name': 'jennifer ryan'},
+                            'buyer_transaction_id': '7P7793882H888144U',
+                            'create_time': '2019-04-18T14:52:39.000Z',
+                            'custom': 'Shopify',
+                            'gross_amount': {'currency_code': 'USD',
+                                             'value': '29.99'},
+                            'invoice_number': 'c8228635476079.1',
+                            'items': [],
+                            'seller': {'email': 'paypal@fastshipstore.com',
+                                       'merchant_id': 'C78RTJUFNTLN6',
+                                       'name': 'Leite Network Technology Co., '
+                                               'Ltd.'},
+                            'seller_protection_eligible': True,
+                            'seller_transaction_id': '4GV49805NK798594P',
+                            'transaction_status': 'REFUNDED'}],
+ 'evidences': [],
+ 'extensions': {'merchandize_dispute_properties': {'issue_type': 'PRODUCT'},
+                'merchant_contacted': False},
+ 'invoice_code': 'c8228635476079.1',
+ 'links': [{'href': 'https://api.paypal.com/v1/customer/disputes/PP-D-30925146',
+            'method': 'GET',
+            'rel': 'self'}],
+ 'messages': {'content': 'I never received my item or a refund',
+              'posted_by': 'BUYER',
+              'time_posted': '2019-05-14T16:41:11.000Z'},
+ 'offer': {'buyer_requested_amount': {'currency_code': 'USD', 'value': '29.99'},
+           'offer_type': 'REFUND'},
+ 'reason': 'MERCHANDISE_OR_SERVICE_NOT_RECEIVED',
+ 'seller': 'paypal@fastshipstore.com',
+ 'stamp': '1561605593',
+ 'status': 'RESOLVED',
+ 'total_price': '29.99',
+ 'update_time': '2019-05-15T01:56:29.000Z',
+ 'url': 'https://api.paypal.com/v1/customer/disputes/PP-D-30925146'}
+2019-06-27 11:19:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.paypal.com/v1/customer/disputes/PP-D-31784216> (referer: https://api.paypal.com/v1/customer/disputes)
+2019-06-27 11:19:55 [py.warnings] WARNING: /usr/local/lib/python3.6/dist-packages/pymysql/cursors.py:170: Warning: (1062, "Duplicate entry 'PP-D-31784216' for key 'uq_dispute_id'")
+  result = self._query(query)
+
+2019-06-27 11:19:55 [root] DEBUG: 插入数据库成功
+2019-06-27 11:19:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.paypal.com/v1/customer/disputes/PP-D-31784216>
+{'buyer': 'Suzanne Brant',
+ 'buyer_transaction_id': '1DV63671FG467805Y',
+ 'create_time': '2019-05-25T10:30:33.000Z',
+ 'currency_code': 'CAD',
+ 'dispute_channel': 'EXTERNAL',
+ 'dispute_id': 'PP-D-31784216',
+ 'dispute_life_cycle_stage': 'CHARGEBACK',
+ 'dispute_state': 'RESOLVED',
+ 'disputed_transactions': [{'buyer': {'name': 'Suzanne Brant'},
+                            'buyer_transaction_id': '1DV63671FG467805Y',
+                            'create_time': '2019-04-19T20:22:34.000Z',
+                            'custom': 'Shopify',
+                            'gross_amount': {'currency_code': 'USD',
+                                             'value': '29.99'},
+                            'invoice_number': 'c8239701360751.1',
+                            'items': [],
+                            'seller': {'email': 'paypal@fastshipstore.com',
+                                       'merchant_id': 'C78RTJUFNTLN6',
+                                       'name': 'Leite Network Technology Co., '
+                                               'Ltd.'},
+                            'seller_protection_eligible': False,
+                            'seller_transaction_id': '82G4867476692602A',
+                            'transaction_status': 'COMPLETED'}],
+ 'evidences': [],
+ 'extensions': {'merchandize_dispute_properties': {}},
+ 'invoice_code': 'c8239701360751.1',
+ 'links': [{'href': 'https://api.paypal.com/v1/customer/disputes/PP-D-31784216',
+            'method': 'GET',
+            'rel': 'self'}],
+ 'messages': {'posted_by': 'BUYER', 'time_posted': '2019-05-25T10:30:44.000Z'},
+ 'offer': {'offer_type': 'REFUND'},
+ 'reason': 'MERCHANDISE_OR_SERVICE_NOT_RECEIVED',
+ 'seller': 'paypal@fastshipstore.com',
+ 'stamp': '1561605595',
+ 'status': 'RESOLVED',
+ 'total_price': '41.43',
+ 'update_time': '2019-05-29T08:55:03.000Z',
+ 'url': 'https://api.paypal.com/v1/customer/disputes/PP-D-31784216'}
+2019-06-27 11:19:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.paypal.com/v1/customer/disputes/PP-D-32098004> (referer: https://api.paypal.com/v1/customer/disputes)
+2019-06-27 11:19:57 [py.warnings] WARNING: /usr/local/lib/python3.6/dist-packages/pymysql/cursors.py:170: Warning: (1062, "Duplicate entry 'PP-D-32098004' for key 'uq_dispute_id'")
+  result = self._query(query)
+
+2019-06-27 11:19:57 [root] DEBUG: 插入数据库成功
+2019-06-27 11:19:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.paypal.com/v1/customer/disputes/PP-D-32098004>
+{'buyer': 'Betty Sonntag',
+ 'buyer_transaction_id': '8AU57862V1563530H',
+ 'create_time': '2019-05-29T17:50:07.000Z',
+ 'currency_code': 'USD',
+ 'dispute_channel': 'INTERNAL',
+ 'dispute_id': 'PP-D-32098004',
+ 'dispute_life_cycle_stage': 'CHARGEBACK',
+ 'dispute_state': 'RESOLVED',
+ 'disputed_transactions': [{'buyer': {'name': 'Betty Sonntag'},
+                            'buyer_transaction_id': '8AU57862V1563530H',
+                            'create_time': '2019-04-20T13:10:38.000Z',
+                            'custom': 'Shopify',
+                            'gross_amount': {'currency_code': 'USD',
+                                             'value': '29.99'},
+                            'invoice_number': 'c8244536803439.1',
+                            'items': [],
+                            'seller': {'email': 'paypal@fastshipstore.com',
+                                       'merchant_id': 'C78RTJUFNTLN6',
+                                       'name': 'Leite Network Technology Co., '
+                                               'Ltd.'},
+                            'seller_protection_eligible': True,
+                            'seller_transaction_id': '2F138832A62181921',
+                            'transaction_status': 'COMPLETED'}],
+ 'evidences': [],
+ 'extensions': {'merchandize_dispute_properties': {'issue_type': 'PRODUCT'},
+                'merchant_contacted': False},
+ 'invoice_code': 'c8244536803439.1',
+ 'links': [{'href': 'https://api.paypal.com/v1/customer/disputes/PP-D-32098004',
+            'method': 'GET',
+            'rel': 'self'}],
+ 'messages': {'content': 'I did not receive the item',
+              'posted_by': 'BUYER',
+              'time_posted': '2019-05-29T17:50:14.000Z'},
+ 'offer': {'buyer_requested_amount': {'currency_code': 'USD',
+                                      'value': '29.99'}},
+ 'reason': 'MERCHANDISE_OR_SERVICE_NOT_RECEIVED',
+ 'seller': 'paypal@fastshipstore.com',
+ 'stamp': '1561605597',
+ 'status': 'RESOLVED',
+ 'total_price': '29.99',
+ 'update_time': '2019-06-07T02:41:26.000Z',
+ 'url': 'https://api.paypal.com/v1/customer/disputes/PP-D-32098004'}
+2019-06-27 11:20:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://api.paypal.com/v1/customer/disputes/PP-D-33975774> (referer: https://api.paypal.com/v1/customer/disputes)
+2019-06-27 11:20:00 [py.warnings] WARNING: /usr/local/lib/python3.6/dist-packages/pymysql/cursors.py:170: Warning: (1062, "Duplicate entry 'PP-D-33975774' for key 'uq_dispute_id'")
+  result = self._query(query)
+
+2019-06-27 11:20:00 [root] DEBUG: 插入数据库成功
+2019-06-27 11:20:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://api.paypal.com/v1/customer/disputes/PP-D-33975774>
+{'buyer': 'brian green',
+ 'buyer_transaction_id': '5L5560223A3463717',
+ 'create_time': '2019-06-22T18:38:42.000Z',
+ 'currency_code': 'USD',
+ 'dispute_channel': 'INTERNAL',
+ 'dispute_id': 'PP-D-33975774',
+ 'dispute_life_cycle_stage': 'INQUIRY',
+ 'dispute_state': 'OPEN_INQUIRIES',
+ 'disputed_transactions': [{'buyer': {'name': 'brian green'},
+                            'buyer_transaction_id': '5L5560223A3463717',
+                            'create_time': '2019-06-03T13:21:06.000Z',
+                            'custom': 'Shopify',
+                            'gross_amount': {'currency_code': 'USD',
+                                             'value': '47.97'},
+                            'invoice_number': 'c7738062864493.1',
+                            'items': [],
+                            'seller': {'email': 'paypal@fastshipstore.com',
+                                       'merchant_id': 'C78RTJUFNTLN6',
+                                       'name': 'Leite Network Technology Co., '
+                                               'Ltd.'},
+                            'seller_protection_eligible': True,
+                            'seller_transaction_id': '9DB13890UN316183D',
+                            'transaction_status': 'HELD'}],
+ 'evidences': [],
+ 'extensions': {'merchandize_dispute_properties': {'issue_type': 'PRODUCT',
+                                                   'product_details': {'purchase_url': 'https://www.paypal.com/myaccount/transaction/details/5L5560223A3463717?utm_source=unp&utm_medium=email&utm_campaign=PPX001066&utm_unptid=825b4384-8602-11e9-9c22-8cdcd4b6f248&ppid=PPX001066&cnac=GB&rsta=en_GB&cust=6D2352450S489845R&unptid=825b4384-8602-11e9-9c22-8cdcd4b6f248&calc=c80f5d6692726&unp_tpcid=email-receipt-xclick-payment&page=main:email:PPX001066:::&pgrp=main:email&e=cl&mchn=em&s=ci&mail=sys',
+                                                                       'sub_reasons': ['MISSING_PARTS']}}},
+ 'invoice_code': 'c7738062864493.1',
+ 'links': [{'href': 'https://api.paypal.com/v1/customer/disputes/PP-D-33975774',
+            'method': 'GET',
+            'rel': 'self'},
+           {'href': 'https://api.paypal.com/v1/customer/disputes/PP-D-33975774',
+            'method': 'PATCH',
+            'rel': 'edit'},
+           {'href': 'https://api.paypal.com/v1/customer/disputes/PP-D-33975774/send-message',
+            'method': 'POST',
+            'rel': 'send_message'},
+           {'href': 'https://api.paypal.com/v1/customer/disputes/PP-D-33975774/make-offer',
+            'method': 'POST',
+            'rel': 'make_offer'},
+           {'href': 'https://api.paypal.com/v1/customer/disputes/PP-D-33975774/escalate',
+            'method': 'POST',
+            'rel': 'escalate'},
+           {'href': 'https://api.paypal.com/v1/customer/disputes/PP-D-33975774/accept-claim',
+            'method': 'POST',
+            'rel': 'accept_claim'}],
+ 'messages': {'content': 'I received 3 but they come packs of 2 so I should '
+                         'have received 6 so I have only got half of my order '
+                         'so I get the other ones or half of the money back ',
+              'posted_by': 'BUYER',
+              'time_posted': '2019-06-22T18:38:47.000Z'},
+ 'offer': {'buyer_requested_amount': {'currency_code': 'USD',
+                                      'value': '47.97'}},
+ 'reason': 'MERCHANDISE_OR_SERVICE_NOT_AS_DESCRIBED',
+ 'seller': 'paypal@fastshipstore.com',
+ 'stamp': '1561605600',
+ 'status': 'OPEN',
+ 'total_price': '47.97',
+ 'update_time': '2019-06-22T18:38:57.000Z',
+ 'url': 'https://api.paypal.com/v1/customer/disputes/PP-D-33975774'}
+2019-06-27 11:20:00 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-06-27 11:20:00 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 3632,
+ 'downloader/request_count': 7,
+ 'downloader/request_method_count/GET': 7,
+ 'downloader/response_bytes': 14848,
+ 'downloader/response_count': 7,
+ 'downloader/response_status_count/200': 7,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 6, 27, 3, 20, 0, 445425),
+ 'item_scraped_count': 6,
+ 'log_count/DEBUG': 31,
+ 'log_count/INFO': 9,
+ 'log_count/WARNING': 6,
+ 'memusage/max': 59510784,
+ 'memusage/startup': 59510784,
+ 'request_depth_max': 1,
+ 'response_received_count': 7,
+ 'scheduler/dequeued': 7,
+ 'scheduler/dequeued/memory': 7,
+ 'scheduler/enqueued': 7,
+ 'scheduler/enqueued/memory': 7,
+ 'start_time': datetime.datetime(2019, 6, 27, 3, 19, 41, 305413)}
+2019-06-27 11:20:00 [scrapy.core.engine] INFO: Spider closed (finished)
